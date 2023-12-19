@@ -1,0 +1,112 @@
+/* Estilo Base Mejorado */
+body {
+    background-color: #1d1d1d;
+    color: #33ff33;
+    font-family: 'Anonymous Pro', monospace!important;
+    overflow-x: hidden; /* Evita desbordamiento horizontal */
+  }
+  
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  .blink {
+    animation: blink 1s linear infinite;
+  }
+  
+  .navbar {
+    background-color: #000000;
+    border-bottom: 2px solid #33ff33;
+    font-size: 1em;
+  }
+
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+  
+  a {
+    color: #33ff33;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  .btn-neon-green {
+    background-color: #000000;
+    color: #33ff33;
+    font-weight: bold;
+    border: 2px solid #33ff33;
+    padding: 0.5em 1em; /* Espaciado interno */
+  }
+
+  .btn-neon-green:hover {
+    background-color: #33ff33;
+    color: #000000;
+  }
+  
+  .contact-form {
+    background-color: #0000004d;
+    border: 2px solid #33ff33;
+    color: #33ff33;
+    padding: 1em;
+  }
+  .form-input, .form-textarea {
+    background-color: #000000;
+    color: #33ff33;
+    border: 1px solid #33ff33;
+    margin-bottom: 1em;
+  }
+  .form-input:focus, .form-textarea:focus {
+    border-color: #ffffff;
+  }
+  
+.skill-card {
+    background-color: #212121;
+    color: #33ff33;
+    border: 1px solid #33ff33;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 1em;
+    transform: scale(.95);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #33ff33;
+  }
+  
+  .skill-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .skill-card img {
+    max-width: auto;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #000000;
+    color: #33ff33;
+    border-top: 2px solid #33ff33;
+    padding: 1em; /* Espaciado interno */
+    font-size: 0.9em;
+  }
+  

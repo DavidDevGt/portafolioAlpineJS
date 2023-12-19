@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DavidWebGT | Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.20/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- AlpineJS -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+    <!-- ParticlesJS -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  </head>
+  <body class="bg-black text-gray-300">
+    <!-- Contenido del portafolio aquí -->
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar bg-base-100">
+      <div class="navbar-start">
+        <p class="ml-3">Mi Portafolio</p>
+      </div>
+      <div class="navbar-end">
+        <ul class="menu menu-horizontal p-0">
+          <li><a href="#sobre-mi">Sobre Mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero-section text-center p-10">
+      <div id="particles-js"></div>
+      <h1 class="text-5xl font-bold">David Vargas</h1>
+      <p class="text-xl mt-4">Desarrollador Web</p>
+      <img
+        src="https://placehold.co/300x300"
+        alt="David Vargas"
+        class="mx-auto mt-6"
+      />
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="p-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">Sobre Mí</h2>
+      <!-- Descripción personal -->
+      <p class="">Soy David Vargas, un apasionado desarrollador web de 22 años, actualmente estudiando en la Universidad Galileo de Guatemala. Mi mundo gira en torno al código, especialmente en PHP y JavaScript, donde encuentro la libertad de crear y solucionar. Mi enfoque es profesional, pero siempre estoy abierto a explorar nuevas tecnologías y metodologías que enriquezcan mi trabajo. En mi tiempo libre, me sumerjo en proyectos que desafían mi conocimiento y expanden mi creatividad. Busco oportunidades que me permitan crecer y aportar significativamente al mundo del desarrollo web.</p>
+    </section>
+
+    <!-- Sección Proyectos con SwiperJS mejorada -->
+    <section id="proyectos" class="p-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">Proyectos</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Tus slides de proyectos aquí -->
+          <!-- Cada slide tiene una imagen centrada y una descripción debajo -->
+          <div class="swiper-slide">
+            <img
+              class="mx-auto"
+              src="https://via.placeholder.com/600x400"
+              alt="Proyecto 1"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="mx-auto"
+              src="https://via.placeholder.com/600x400"
+              alt="Proyecto 2"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="mx-auto"
+              src="https://via.placeholder.com/600x400"
+              alt="Proyecto 3"
+            />
+          </div>
+          <!-- Repite para cada proyecto -->
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section class="p-20 text-center">
+      <div class="container mx-auto px-4 py-6" id="habilidades">
+        <h1 class="text-3xl font-bold text-center text-neon-green mb-6">
+          ¿Qué tecnologías he usado?
+        </h1>
+        <div class="container mx-auto">
+          <h3 class="text-2xl font-semibold mb-4">Frontend</h3>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6"
+          >
+            <div class="skill-card">
+              <img src="img/html-5.png" alt="HTML5" class="mx-auto" />
+              <p class="text-center mt-2">HTML5</p>
+            </div>
+            <div class="skill-card">
+              <img src="img/css3.png" alt="CSS3" class="mx-auto" />
+              <p class="text-center mt-2">CSS3</p>
+            </div>
+            <div class="skill-card">
+              <img src="img/javascript.png" alt="Javascript" class="mx-auto" />
+              <p class="text-center mt-2">Javascript</p>
+            </div>
+            <div class="skill-card">
+              <img src="img/jquery.png" alt="jQuery" class="mx-auto" />
+              <p class="text-center mt-2">jQuery</p>
+            </div>
+
+            <!-- Repite para cada habilidad -->
+          </div>
+          <h3 class="text-2xl font-semibold mb-4">Backend</h3>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6"
+          >
+            <div class="skill-card">
+              <img src="img/php.png" alt="PHP" class="mx-auto" />
+              <p class="text-center mt-2">PHP</p>
+            </div>
+            <div class="skill-card">
+              <img src="img/nodejs.png" alt="Node.js" class="mx-auto" />
+              <p class="text-center mt-2">Node.js</p>
+            </div>
+            <div class="skill-card">
+              <img src="img/mysql.png" alt="MySQL" class="mx-auto" />
+              <p class="text-center mt-2">MySQL</p>
+            </div>
+            <div class="skill-card">
+              <img src="img/sqlite.png" alt="SQLite" class="mx-auto" />
+              <p class="text-center mt-2">SQLite</p>
+            </div>
+          </div>
+
+          <h3 class="text-2xl font-semibold mb-4">
+            Servidores y Control de Versiones
+          </h3>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6"
+          >
+            <div class="skill-card">
+              <div class="skill-card-content">
+                <img src="img/linux.png" alt="Linux" class="mx-auto" />
+                <p class="text-center mt-2">Linux</p>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-content">
+                <img src="img/docker.png" alt="Docker" class="mx-auto" />
+                <p class="text-center mt-2">Docker</p>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-content">
+                <img src="img/git.png" alt="Git" class="mx-auto" />
+                <p class="text-center mt-2">Git</p>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-content">
+                <img src="img/github.png" alt="Github" class="mx-auto" />
+                <p class="text-center mt-2">Github</p>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-content">
+                <img
+                  src="img/actions.png"
+                  alt="Github Actions"
+                  class="mx-auto"
+                />
+                <p class="text-center mt-2">Github Actions</p>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-content">
+                <img src="img/nginx.png" alt="NGINX" class="mx-auto" />
+                <p class="text-center mt-2">Server Nginx</p>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-content">
+                <img src="img/apache.png" alt="Apache" class="mx-auto" />
+                <p class="text-center mt-2">Server Apache</p>
+              </div>
+            </div>
+          </div>
+          <!-- Continúa con las demás secciones -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="p-20 text-center">
+      <h3 class="text-3xl font-bold mb-4 text-neon-green">
+        Contáctame para tu próximo proyecto
+      </h3>
+      <form class="contact-form bg-dark-gray p-6 rounded-lg">
+        <div class="form-group mb-4">
+          <input
+            type="text"
+            class="form-input w-full p-2 rounded bg-black text-white border-neon-blue focus:border-neon-green"
+            placeholder="Nombre"
+            required
+          />
+        </div>
+        <div class="form-group mb-4">
+          <input
+            type="email"
+            class="form-input w-full p-2 rounded bg-black text-white border-neon-blue focus:border-neon-green"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="form-group mb-4">
+          <textarea
+            class="form-input w-full p-2 rounded bg-black text-white border-neon-blue focus:border-neon-green"
+            placeholder="Mensaje"
+            rows="8"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn-neon-green w-full p-2 rounded">
+          Enviar
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center p-10">
+      <p>&copy; 2023 Mi Portafolio</p>
+      <!-- Iconos de redes sociales aquí -->
+    </footer>
+
+    <!-- SwiperJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- RellaxJS -->
+    <script src="https://cdn.jsdelivr.net/npm/rellax/rellax.min.js"></script>
+
+    <!-- Script Personalizado -->
+    <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        if (typeof particlesJS !== "undefined") {
+          particlesJS.load(
+            "particles-js",
+            "./src/particlesjs-config.json",
+            function () {
+              console.log("particles.js loaded");
+            }
+          );
+        } else {
+          console.log("particlesJS is not defined");
+        }
+      });
+      var rellax = new Rellax(".hero-section", {
+        speed: -2,
+        center: false,
+        wrapper: null,
+        round: true,
+        vertical: true,
+        horizontal: false,
+      });
+    </script>
+  </body>
+</html>
