@@ -43,7 +43,6 @@ var rellax = new Rellax(".hero-section", {
   horizontal: false,
 });
 
-
 //* Código para manipular el DOM
 
 const habilidades = [
@@ -98,7 +97,19 @@ function generarHTMLHabilidades(habilidades) {
   });
 }
 
-// Mi document.ready pero version vanilla
+// Animación suave al darle click a enlace
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+      block: "start", // Puedes cambiar a 'end', 'center', etc.
+    });
+  });
+});
+
+//* Mi document.ready pero version vanilla
 document.addEventListener("DOMContentLoaded", () => {
   generarHTMLHabilidades(habilidades);
 });
