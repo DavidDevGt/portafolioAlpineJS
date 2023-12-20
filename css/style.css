@@ -1,4 +1,3 @@
-/* Estilo Base Mejorado */
 body {
     background-color: #1d1d1d;
     color: #33ff33;
@@ -74,7 +73,7 @@ body {
   }
   
 .skill-card {
-    background-color: #212121;
+    background-color: #414141;
     color: #33ff33;
     border: 1px solid #33ff33;
     text-align: center;
