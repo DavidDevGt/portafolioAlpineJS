@@ -1,111 +1,143 @@
-body {
-    background-color: #1d1d1d;
-    color: #33ff33;
-    font-family: 'Anonymous Pro', monospace!important;
-    overflow-x: hidden; /* Evita desbordamiento horizontal */
-  }
-  
-  @keyframes blink {
-    50% { opacity: 0; }
-  }
-  .blink {
-    animation: blink 1s linear infinite;
-  }
-  
-  .navbar {
-    background-color: #000000;
-    border-bottom: 2px solid #33ff33;
-    font-size: 1em;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  .hero-section {
-    position: relative;
-    height: 100vh;
-    z-index: 1;
+body {
+  background-color: #1d1d1d;
+  color: #33ff33;
+  font-family: "Anonymous Pro", monospace !important;
+  overflow-x: hidden; /* Evita desbordamiento horizontal */
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.blink {
+  animation: blink 1s linear infinite;
+}
+
+.navbar {
+  background-color: #000000;
+  border-bottom: 2px solid #33ff33;
+  font-size: 1em;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 
 #particles-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
-  
-  a {
-    color: #33ff33;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-  
-  .btn-neon-green {
-    background-color: #000000;
-    color: #33ff33;
-    font-weight: bold;
-    border: 2px solid #33ff33;
-    padding: 0.5em 1em; /* Espaciado interno */
-  }
 
-  .btn-neon-green:hover {
-    background-color: #33ff33;
-    color: #000000;
-  }
-  
-  .contact-form {
-    background-color: #0000004d;
-    border: 2px solid #33ff33;
-    color: #33ff33;
-    padding: 1em;
-  }
-  .form-input, .form-textarea {
-    background-color: #000000;
-    color: #33ff33;
-    border: 1px solid #33ff33;
-    margin-bottom: 1em;
-  }
-  .form-input:focus, .form-textarea:focus {
-    border-color: #ffffff;
-  }
-  
+a {
+  color: #33ff33;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.btn-neon-green {
+  background-color: #000000;
+  color: #33ff33;
+  font-weight: bold;
+  border: 2px solid #33ff33;
+  padding: 0.5em 1em; /* Espaciado interno */
+}
+
+.btn-neon-green:hover {
+  background-color: #33ff33;
+  color: #000000;
+}
+
+.contact-form {
+  background-color: #0000004d;
+  border: 2px solid #33ff33;
+  color: #33ff33;
+  padding: 1em;
+}
+.form-input,
+.form-textarea {
+  background-color: #000000;
+  color: #33ff33;
+  border: 1px solid #33ff33;
+  margin-bottom: 1em;
+}
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #ffffff;
+}
+
 .skill-card {
-    background-color: #414141;
-    color: #33ff33;
-    border: 1px solid #33ff33;
-    text-align: center;
-    padding: 1em;
-    margin-bottom: 1em;
-    transform: scale(.95);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
-  
-  .skill-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px #33ff33;
-  }
-  
-  .skill-card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .skill-card img {
-    max-width: auto;
-    height: 120px;
-    margin-bottom: 10px;
-  }
-  
-  footer {
-    background-color: #000000;
-    color: #33ff33;
-    border-top: 2px solid #33ff33;
-    padding: 1em; /* Espaciado interno */
-    font-size: 0.9em;
-  }
-  
+  background-color: #414141;
+  color: #33ff33;
+  border: 1px solid #33ff33;
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 1em;
+  transform: scale(0.95);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #33ff33;
+  background-color: #555555;
+}
+
+.skill-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card img {
+  max-width: auto;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #000000;
+  color: #33ff33;
+  border-top: 2px solid #33ff33;
+  padding: 1em; /* Espaciado interno */
+  font-size: 0.9em;
+}
+
+.perfil-img {
+  border-radius: 50%;
+  border: 3px solid #33ff33;
+  max-width: 200px;
+  height: auto;
+}
+
+.call-to-action a {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  margin: 0 0.5em;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Agrega estilos para hover en los botones */
+.call-to-action a:hover {
+  background-color: #33ff33;
+  color: #000000;
+}
